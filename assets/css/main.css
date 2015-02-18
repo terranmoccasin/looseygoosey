@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'aaarghnormal';
+    src: url('../fonts/aaargh/aaargh-webfont.eot');
+    src: url('../fonts/aaargh/aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aaargh/aaargh-webfont.woff2') format('woff2'),
+         url('../fonts/aaargh/aaargh-webfont.woff') format('woff'),
+         url('../fonts/aaargh/aaargh-webfont.ttf') format('truetype'),
+         url('../fonts/aaargh/aaargh-webfont.svg#aaarghnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'from_cartoon_blocksregular';
+    src: url('../fonts/from_cartoon_blocks/from_cartoon_blocks-webfont.eot');
+    src: url('../fonts/from_cartoon_blocks/from_cartoon_blocks-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/from_cartoon_blocks/from_cartoon_blocks-webfont.woff2') format('woff2'),
+         url('../fonts/from_cartoon_blocks/from_cartoon_blocks-webfont.woff') format('woff'),
+         url('../fonts/from_cartoon_blocks/from_cartoon_blocks-webfont.ttf') format('truetype'),
+         url('../fonts/from_cartoon_blocks/from_cartoon_blocks-webfont.svg#from_cartoon_blocksregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#contentBody p {
+  margin: 0;
+  margin-bottom: 17px;
+  padding-top: 7px;
+}
+
+body {
+  background-image: url("../images/darkwood.jpg");
+  background-attachment: fixed;
+  margin: 0;
+}
+
+#paper {
+  background-image: url("../images/red_line_bg2.png");
+  background-repeat: repeat-y;
+  background-color: #fff;
+  max-width: 960px;
+  min-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#header {
+  height: 100px;
+}
+
+#content {
+  background-image: url("../images/blue_line_bg2.png");
+  min-height: 750px;
+}
+
+#contentBody {
+  margin-left: 96px;
+  font-family: "aaarghnormal";
+  font-size: 16px;
+  padding: 0px 70px 0px 10px;
+  line-height: 150%;
+}
+
+#notebook {
+  background-image: url("../images/notebook.png");
+  width: 968px;
+  height: 587px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#leftPostIt {
+  background: url("../images/left_post_it.png") no-repeat;
+  padding: 25px;
+  width: 300px;
+  height: 265px;
+  position: absolute;
+  top: 35px;
+  left: 80px;
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#leftPostIt .title {
+  font-family: "from_cartoon_blocksregular";
+  font-size: 67px;
+}
+
+#rightPostIt {
+  background: url("../images/right_post_it.png") no-repeat;
+  width: 300px;
+  height: 265px;
+  padding: 25px;
+  position: absolute;
+  top: 130px;
+  left: 550px;
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 968px/*whatever width you want*/;
+}
