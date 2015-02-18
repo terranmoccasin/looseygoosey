@@ -1,22 +1,21 @@
 {{!< default}}
 <div id="wrapper">
+  {{#post}}
   <div id="paper">
-    <div id="header"></div>
-      <div id="content">
-        <div id="contentBody">
-        {{#post}}
-        // here we are in the post scope
-        {{/post}}
-          <p>I've been attending something called Android Bootcamp at work this week. It's an entire week of classes 10-5 where we learn how to write apps for the Android platform. The course is designed so that for the first three days we write a meme generation application called Memegen, and in the last two days we have a "code sprint", which is essentially a hackathon with co-workers. It's been a great experience so far, and it has also been a great introduction to writing mobile applications and thinking about many differences between writing regular desktop applications both client-side and server-side.</p>
+    <div id="header">
+      <div id="titleWrapper">
+        <div class="title">
+          {{title}}
+        </div>
+      </div>
+    </div>
+      <div id="contentWrapper">
+        <div class="content {{post_class}}">
 
-          <p>During my spare time at home I have also been working on setting up a VPN at home so that I can connect to my home network from anywhere that I have an internet connection. This will allow me to both connect to my desktop computer at home and also access any other devices on the LAN. The purpose of this was to learn more about networking and also have a setup where I can develop software on different computers without actually having source code sitting on the local drive of my laptops.</p>
-
-          <p>Aside from technical stuff, I haven't been up to much lately. I'm officially going to Taiwan, Tokyo, and Shanghai in December with Yutaro - really looking forward to that. I also haven't been playing basketball recently, but I have still been going to the gym twice a week.</p>
-
-          <p>Humphrey is visiting on Friday for Halloween weekend! Woohoo! I still don't know if I am going to dress up, and I also don't know what I would be if I dressed up. I guess we will see...</p>
-
-          <p>Anyway not much else is going on. Work has been picking up a little bit, but in general this entire quarter is less busy as the holidays approach. We also have a code freeze for almost the entire month of December, so once November is about to end things will really wind down.</p>
+          {{content}}
         </div>
       </div>
     </div>
   </div>
+  {{/post}}
+</div>

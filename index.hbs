@@ -3,16 +3,25 @@
   <div class="middle">
     <div class="inner">
       <div id="notebook">
-        <div id="leftPostIt">
+        <div id="leftPostIt" class="post-it">
           <div class="title">BigEndians</div>
-          <div>About</div>
-          <div>Archives</div>
-          <div>Credits</div>
+          <div class="content">
+            <ul>
+              <li><div><a href="">About</a></div></li>
+              <li><div><a href="">Archives</a></div></li>
+              <li><div><a href="">Credits</a></div></li>
+            </ul>
+          </div>
         </div>
-        <div id="rightPostIt">
+        <div id="rightPostIt" class="post-it">
+          <ul>
           {{#foreach posts}}
-          {{title}}
+            <li>
+              <div><a href="{{url}}">{{title}}</a></div>
+              <div class="date">{{date published_at timeago="true"}}</div>
+            </li>
           {{/foreach}}
+          </ul>
         </div>
       </div>
     </div>

@@ -22,16 +22,99 @@
     font-style: normal;
 }
 
-#contentBody p {
+@font-face {
+    font-family: 'dk_lemon_yellow_sunregular';
+    src: url('../fonts/dk_lemon_yellow_sun/dk_lemon_yellow_sun-webfont.eot');
+    src: url('../fonts/dk_lemon_yellow_sun/dk_lemon_yellow_sun-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dk_lemon_yellow_sun/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+         url('../fonts/dk_lemon_yellow_sun/dk_lemon_yellow_sun-webfont.woff') format('woff'),
+         url('../fonts/dk_lemon_yellow_sun/dk_lemon_yellow_sun-webfont.ttf') format('truetype'),
+         url('../fonts/dk_lemon_yellow_sun/dk_lemon_yellow_sun-webfont.svg#dk_lemon_yellow_sunregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'epicawesomenessscribblzmedium';
+    src: url('../fonts/EpicAwesomenessScribblz/EpicAwesomenessScribblz-webfont.eot');
+    src: url('../fonts/EpicAwesomenessScribblz/EpicAwesomenessScribblz-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/EpicAwesomenessScribblz/EpicAwesomenessScribblz-webfont.woff2') format('woff2'),
+         url('../fonts/EpicAwesomenessScribblz/EpicAwesomenessScribblz-webfont.woff') format('woff'),
+         url('../fonts/EpicAwesomenessScribblz/EpicAwesomenessScribblz-webfont.ttf') format('truetype'),
+         url('../fonts/EpicAwesomenessScribblz/EpicAwesomenessScribblz-webfont.svg#epicawesomenessscribblzmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  margin-bottom: 17px;
-  padding-top: 7px;
+}
+
+h1 {
+  font-family: 'epicawesomenessscribblzmedium';
+  font-size: 3em;
+  padding-top: 15px;
+  margin-bottom: 33px;
+}
+
+h2 {
+  font-family: 'epicawesomenessscribblzmedium';
+  font-size: 1.78em;
+  padding-top: 1px;
+  margin-bottom: 23px;
+}
+
+h3 {
+  font-size: 1.4em;
+  padding-top: 4px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: 'epicawesomenessscribblzmedium';
+  font-size: 1.7em;
+  padding-top: 1px;
+  margin-bottom: -1px;
+
+}
+
+h5 {
+  font-size: 1.4em;
+  padding-top: 4px;
+  margin-bottom: -4px;
+}
+
+h6 {
+  font-size: 1.2em;
+  padding-top: 5px;
+  margin-bottom: -5px;
 }
 
 body {
   background-image: url("../images/darkwood.jpg");
   background-attachment: fixed;
   margin: 0;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
 }
 
 #paper {
@@ -49,17 +132,62 @@ body {
   height: 100px;
 }
 
-#content {
+#header #titleWrapper {
+  display: table;
+  height: 100%;
+  margin-left: 96px;
+}
+
+#header .title {
+  font-family: "epicawesomenessscribblzmedium";
+  font-size: 2.5em;
+  margin-left: 96px;
+  padding-left: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bolder;
+}
+
+#contentWrapper {
   background-image: url("../images/blue_line_bg2.png");
   min-height: 750px;
 }
 
-#contentBody {
+#contentWrapper .content {
   margin-left: 96px;
   font-family: "aaarghnormal";
-  font-size: 16px;
+  font-size: 18px;
   padding: 0px 70px 0px 10px;
-  line-height: 150%;
+  line-height: 138%;
+}
+
+#contentWrapper img {
+  max-width: 784px;
+  height: auto;
+}
+
+#contentWrapper p {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-top: 6px;
+}
+
+#contentWrapper ul, ol {
+  margin: 0px;
+}
+
+#contentWrapper .post > ul,
+#contentWrapper .post > ol {
+  margin-bottom: 24px;
+}
+
+#contentWrapper li {
+  padding-top: 5px;
+  margin-bottom: -5px;
+}
+
+#contentWrapper li ul, li ol {
+  margin-top: -5px;
 }
 
 #notebook {
@@ -71,12 +199,23 @@ body {
   position: relative;
 }
 
-#leftPostIt {
-  background: url("../images/left_post_it.png") no-repeat;
+.post-it {
   padding: 25px;
   width: 300px;
   height: 265px;
   position: absolute;
+}
+
+.post-it ul {
+  font-family: "dk_lemon_yellow_sunregular";
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#leftPostIt {
+  background: url("../images/left_post_it.png") no-repeat;
   top: 35px;
   left: 80px;
   -ms-transform: rotate(-3deg);
@@ -89,17 +228,25 @@ body {
   font-size: 67px;
 }
 
+#leftPostIt .content {
+  padding: 0px 0px 0px 25px;
+}
+
 #rightPostIt {
   background: url("../images/right_post_it.png") no-repeat;
-  width: 300px;
-  height: 265px;
-  padding: 25px;
-  position: absolute;
   top: 130px;
   left: 550px;
   -ms-transform: rotate(3deg);
   -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
+}
+
+#rightPostIt li {
+  margin-bottom: 10px;
+}
+
+#rightPostIt .date {
+  font-size: 14px;
 }
 
 .outer {
