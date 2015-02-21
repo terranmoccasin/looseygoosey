@@ -8,7 +8,8 @@ LooseGoosey.adjustImages = function() {
   $.each($('.post img'), function(index, img) {
     $(img).on('load', function() {
       var height = $(img).height();
-      var totalPadding = Math.floor(height / LooseGoosey.constants.LINE_HEIGHT);
+      var totalPadding = (Math.floor(height / LooseGoosey.constants.LINE_HEIGHT) + 1)
+          * LooseGoosey.constants.LINE_HEIGHT - height;
       var topPadding = Math.floor(totalPadding / 2);
       var botPadding = totalPadding - topPadding;
       $(img).parent().css({
@@ -20,7 +21,6 @@ LooseGoosey.adjustImages = function() {
         'height': height,
         'margin-bottom': LooseGoosey.constants.LINE_HEIGHT
       });
-      console.log($(img).height());
     });
   });
 };
