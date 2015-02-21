@@ -117,6 +117,14 @@ a:active {
     color: #0000FF;
 }
 
+/* Code Block */
+pre {
+  margin: 0px 0px 23px 0px;
+  padding: 10px 0px 11px 0px;
+  background-color: #ccc;
+  border: 2px solid red;
+}
+
 #paper {
   background-image: url("../images/red_line_bg2.png");
   background-repeat: repeat-y;
