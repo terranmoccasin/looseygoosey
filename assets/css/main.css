@@ -199,6 +199,7 @@ pre {
   margin-top: -5px;
 }
 
+/* Index Page */
 #notebook {
   background-image: url("../images/notebook.png");
   width: 968px;
@@ -278,20 +279,130 @@ pre {
   left: 155px;
 }
 
-.outer {
+.home-template .outer {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-.middle {
+.home-template .middle {
   display: table-cell;
   vertical-align: middle;
 }
 
-.inner {
+.home-template .inner {
   margin-left: auto;
   margin-right: auto; 
-  width: 968px/*whatever width you want*/;
+  width: 968px;
+}
+
+/* About page */
+.page-template-about .outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.page-template-about .middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page-template-about .inner {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 1000px;
+}
+
+.page-template-about .nav {
+  font-family: "dk_lemon_yellow_sunregular";
+  position: absolute;
+  font-size: 25px;
+  top: 20px;
+  left: 10px;
+}
+
+#polaroid {
+  background-image: url("../images/polaroid.png");
+  width: 1000px;
+  height: 794px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#portrait {
+  background-image: url("../images/me.png");
+  width: 933px;
+  height: 591px;
+  position: absolute;
+  top: 64px;
+  left: 38px;
+}
+
+#bluePostIt {
+  font-family: "dk_lemon_yellow_sunregular";
+  font-size: 20px;
+  background-image: url("../images/blue_post_it.png");
+  top: 160px;
+  left: 110px;
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#bluePostIt .title {
+  font-size: 36px;
+}
+
+#bluePostIt .title-small {
+  font-size: 26px;
+}
+
+#socialMediaWrapper {
+  top: 685px;
+  width: 1000px;
+  height: auto;
+  position: absolute;
+}
+
+#socialMedia {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+}
+
+#socialMedia .icon {
+  width: 80px;
+  height: 80px;
+  background-size: 80px auto;
+  float: left;
+}
+
+#facebookIcon {
+  background-image: url("../images/facebook_128px.png");
+  margin-right: 15px;
+}
+
+#facebookIcon:hover {
+  background-image: url("../images/facebook_128px_hover.png");
+}
+
+#twitterIcon {
+  background-image: url("../images/twitter_128px.png");
+  margin-right: 15px;
+}
+
+#twitterIcon:hover {
+  background-image: url("../images/twitter_128px_hover.png");
+}
+
+#linkedinIcon {
+  background-image: url("../images/linkedin_128px.png");
+}
+
+#linkedinIcon:hover {
+  background-image: url("../images/linkedin_128px_hover.png");
 }
