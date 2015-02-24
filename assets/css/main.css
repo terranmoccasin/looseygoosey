@@ -279,19 +279,19 @@ pre {
   left: 155px;
 }
 
-.home-template .outer {
+.home-template .outer, .paged .outer {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-.home-template .middle {
+.home-template .middle, .paged .middle {
   display: table-cell;
   vertical-align: middle;
 }
 
-.home-template .inner {
+.home-template .inner, .paged .inner {
   margin-left: auto;
   margin-right: auto; 
   width: 968px;
@@ -377,32 +377,36 @@ pre {
 #socialMedia .icon {
   width: 80px;
   height: 80px;
-  background-size: 80px auto;
+  /*background-size: 80px auto;*/
   float: left;
 }
 
+#facebookIcon, #twitterIcon, #linkedinIcon {
+  background-image: url("../images/social_media_icon_sprite.png");
+}
+
 #facebookIcon {
-  background-image: url("../images/facebook_128px.png");
+  background-position: 0px 0px;
   margin-right: 15px;
 }
 
 #facebookIcon:hover {
-  background-image: url("../images/facebook_128px_hover.png");
+  background-position: -80px 0px;
 }
 
 #twitterIcon {
-  background-image: url("../images/twitter_128px.png");
+  background-position: 0px -160px;
   margin-right: 15px;
 }
 
 #twitterIcon:hover {
-  background-image: url("../images/twitter_128px_hover.png");
+  background-position: -80px -160px;
 }
 
 #linkedinIcon {
-  background-image: url("../images/linkedin_128px.png");
+  background-position: 0px -80px;
 }
 
 #linkedinIcon:hover {
-  background-image: url("../images/linkedin_128px_hover.png");
+  background-position: -80px -80px;
 }
