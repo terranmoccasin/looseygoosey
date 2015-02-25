@@ -12,16 +12,14 @@ LooseGoosey.adjustImages = function() {
           * LooseGoosey.constants.LINE_HEIGHT - height;
       var topPadding = Math.floor(totalPadding / 2);
       var botPadding = totalPadding - topPadding + 6;
+      // TODO(mqhwang): Make some kind of string replace method to pull this into a div template.
+      $(img).before(
+        '<div class="img-spacer" style="margin-bottom: -6px; height:' + topPadding + 'px;"></div>');
+      $(img).after(
+        '<div class="img-spacer" style="height:' + botPadding + 'px;"></div>');
       $(img).css({
-        // 'margin': 0,
         'display': 'block',
-        'padding-top': topPadding,
-        'padding-bottom': botPadding,
-        'margin-top': '-6px',
-        // 'padding-left': 0,
-        // 'padding-right': 0,
-        // 'height': height,
-        // 'margin-bottom': LooseGoosey.constants.LINE_HEIGHT
+        // 'border': '1px solid #000',
       });
     });
   });
