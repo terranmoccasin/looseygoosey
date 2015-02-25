@@ -135,10 +135,10 @@ a:active {
 /* Code Block */
 pre {
   margin: 0px 0px 23px 0px;
-  padding: 10px 10px 11px 10px;
+  padding: 10px 10px 11px 20px;
   background-color: #272822;
   border: 2px solid #878d8a;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #fff;
 }
 
