@@ -99,6 +99,17 @@ body {
   margin: 0;
 }
 
+blockquote {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0px 0px 0px 40px;
+  padding: 0px;
+}
+
+#contentWrapper blockquote p {
+  padding: 4px 0px 2px 0px;
+}
+
 a:link {
     color: #000;
     text-decoration: none;
