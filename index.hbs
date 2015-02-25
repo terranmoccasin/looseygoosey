@@ -15,6 +15,7 @@
         </div>
         <div id="rightPostIt" class="post-it">
           <ul>
+<!-- TODO(mqhwang): This could potentially overflow if there are a lot of long titled posts in succession. -->
           {{#foreach posts}}
             <li>
               <div><a href="{{url}}">{{title}}</a></div>
