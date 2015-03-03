@@ -314,6 +314,47 @@ pre {
   width: 968px;
 }
 
+/* Credits page */
+.page-template-credits .outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.page-template-credits .middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page-template-credits .inner {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 768px;
+}
+
+#creditsPaper {
+  font-family: 'dk_lemon_yellow_sunregular';
+  background-image: url("../images/paper.jpg");
+  width: 768px;
+  height: 1589px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+#creditsTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 66px;
+  padding-top: 70px;
+}
+
+#creditsPaper p {
+  font-size: 36px;
+  margin: 50px;
+}
+
 /* About page */
 .page-template-about .outer {
   display: table;
