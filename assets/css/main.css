@@ -143,7 +143,7 @@ pre {
 }
 
 #paper {
-  background-image: url("../images/red_line_bg2.png");
+  background-image: url("../images/red_line_bg3.png");
   background-repeat: repeat-y;
   background-color: #fff;
   max-width: 960px;
@@ -174,7 +174,7 @@ pre {
 }
 
 #contentWrapper {
-  background-image: url("../images/blue_line_bg2.png");
+  background-image: url("../images/gray_line_bg2.png");
   padding-bottom: 24px;
 }
 
