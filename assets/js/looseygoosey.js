@@ -1,15 +1,15 @@
-var LooseGoosey = LooseGoosey || {};
+var LooseyGoosey = LooseyGoosey || {};
 
-LooseGoosey.constants = {
+LooseyGoosey.constants = {
   LINE_HEIGHT: 24
 };
 
-LooseGoosey.adjustImages = function() {
-  $.each($('.post img'), function(index, img) {
+LooseyGoosey.adjustTags = function($tags) {
+  $.each($tags, function(index, img) {
     $(img).on('load', function() {
       var height = $(img).height();
-      var totalPadding = (Math.floor(height / LooseGoosey.constants.LINE_HEIGHT) + 1)
-          * LooseGoosey.constants.LINE_HEIGHT - height;
+      var totalPadding = (Math.floor(height / LooseyGoosey.constants.LINE_HEIGHT) + 1)
+          * LooseyGoosey.constants.LINE_HEIGHT - height;
       var topPadding = Math.floor(totalPadding / 2);
       var botPadding = totalPadding - topPadding + 6;
       // TODO(mqhwang): Make some kind of string replace method to pull this into a div template.
@@ -26,5 +26,6 @@ LooseGoosey.adjustImages = function() {
 };
 
 $(document).ready(function() {
-  LooseGoosey.adjustImages();
+  LooseyGoosey.adjustTags($('.post img'));
+  LooseyGoosey.adjustTags($('.post iframe'))
 });
