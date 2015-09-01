@@ -198,6 +198,27 @@ pre {
   padding-top: 6px;
 }
 
+#contentWrapper a:link {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+/* visited link */
+#contentWrapper a:visited {
+    color: #551A8B;
+}
+
+/* mouse over link */
+#contentWrapper a:hover {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+
+/* selected link */
+#contentWrapper a:active {
+    color: #0000EE;
+}
+
 #contentWrapper ul, ol {
   margin: 0px;
 }
